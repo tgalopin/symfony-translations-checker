@@ -1,0 +1,25 @@
+{
+    "directories": [ "src" ],
+    "files": [ "LICENSE" ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "Tester",
+                "Tests",
+                "tests"
+            ],
+            "in": "vendor"
+        },
+        {
+            "name": "*.xsd",
+            "in": "vendor"
+        }
+    ],
+    "compactors": [ "KevinGH\\Box\\Compactor\\Php" ],
+    "check-requirements": false,
+    "compression": "GZ",
+    "git-version": "package_version",
+    "main": "bin/checker",
+    "output": "build/checker.phar"
+}

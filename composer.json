@@ -1,0 +1,53 @@
+{
+    "name": "tgalopin/symfony-translations-checker",
+    "description": "Checks the coherence of the translations of a Symfony application across locales.",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/tgalopin/symfony-translations-checker",
+    "bin": [
+        "bin/checker"
+    ],
+    "keywords": [
+        "symfony",
+        "translation",
+        "translations",
+        "checker",
+        "linter",
+        "lint",
+        "cli"
+    ],
+    "authors": [
+        {
+            "name": "Titouan Galopin",
+            "email": "galopintitouan@gmail.com",
+            "homepage": "https://titouangalopin.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "ext-json": "*",
+        "symfony/console": "^5.2",
+        "symfony/finder": "^5.2",
+        "symfony/yaml": "^5.2"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.2",
+        "symfony/var-dumper": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TranslationsChecker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\TranslationsChecker\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.34"
+        }
+    }
+}
