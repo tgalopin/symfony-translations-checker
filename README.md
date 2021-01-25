@@ -4,7 +4,7 @@ Symfony Translations Checker
 Symfony Translations Checker is a small PHP tool that checks the coherence of the translations of
 a Symfony application across locales. It is designed to be used as a Continuous Integration tool.
 
-It fails when it finds:
+It warns about issues for:
 
 * domains that do not have the same locales as other domains
 * keys that exists in the reference locale but not in another locale
