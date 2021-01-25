@@ -25,8 +25,7 @@ pointing it to your translations directory:
 php symfony-translation-checker.phar check /path/to/your/project/translations
 ```
 
-By default, the locale acting as reference is either English or the first one found.
-You can change this setting by passing a reference option:
+By default, the locale acting as reference is "en". You can change this setting by passing a reference option:
 
 ```bash
 php symfony-translation-checker.phar check /path/to/your/project/translations --reference=fr
